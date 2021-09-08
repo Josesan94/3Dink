@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+* {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+:root {
+  --blanco: #455157;
+  --cremita: #f5dfc6;
+  --negro: #110f0f;
+}
+
+body {
+  background-image: linear-gradient(
+    135deg,
+    #e8b40a,
+    #463c2e,
+    #92752a,
+    #c5952d,
+    #3f3b33,
+    #8f4703,
+    #3f3a35
+  );
+  background-size: 500%;
+  animation: fondoxx 10s infinite;
+}
+.fondonavbar {
+  background-color: #131414;
+}
+
+.fondopagination {
+  background-color: rgb(174, 16, 16);
+}
+.colorboton {
+  background-color: #f19408fb;
+  color: #000000;
+  border: transparent;
+}
+.colorboton2 {
+  background-color: #f19408fb;
+}
+
+p,
+h4,
+h1 {
+  box-sizing: content-box;
+  color: whitesmoke;
+}
+
+#articulox {
+  background-image: linear-gradient(rgb(58, 58, 57), rgb(39, 38, 38), grey);
+
+  background-position: 0% 50% 100%;
+}
+
+#ender {
+  height: 500px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  background-color: #f19408fb;
+  border: transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.publicidad-productos {
+  font-size: 20px;
+  color: gray;
+}
+
+.carousel01 {
+  height: 400px;
+}
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff !important;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.btn-neon:hover {
+  background: #f19408fb;
+  box-shadow: 0 0 10px #f19408fb, 0 0 40px #f19408fb, 0 0 80px #f19408fb;
+  transition-delay: 1s;
+}
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f19408fb);
+}
+.btn-neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f19408fb);
+}
+.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f19408fb);
+}
+.btn-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f19408fb);
+}
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+.btn2-neon {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+/* .btn2-neon:hover{
+    background: #f19408fb;
+    box-shadow: 0 0 10px #f19408fb, 0 0 40px #f19408fb, 0 0 80px #f19408fb;
+    transition-delay: 1s;
+  } */
+.btn2-neon span {
+  position: absolute;
+  display: block;
+}
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f19408fb);
+}
+.btn2-neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f19408fb);
+}
+.btn2-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f19408fb);
+}
+.btn2-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f19408fb);
+}
+.btn2-neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/*------------------------DROPDOWN--------------------*/
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 2;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+
+/************************************************/
+/*********************PABLO**********************/
+/************************************************/
+
+.pagination {
+  justify-content: center;
+}
+.hola {
+  background-color: brown;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.container > a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+}
+
+/************************************************/
+/****************IMAGEN_PERFIL*******************/
+/************************************************/
+
+.d-flex img {
+  height: 100px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#icono {
+  width: 30%;
+  object-fit: contain;
+}
+
+/************************************************/
+/*************BOTON_COMPRA_FRIDA*****************/
+/************************************************/
+
+.btn-compra {
+  margin-top: 20px;
+}
+.medio-pago .form-select {
+  min-width: 0%;
+}
+
+.subtitulo-mate:hover {
+  color: #000000;
+}
+.precio-list {
+  font-size: 25px;
+}
+.disponibilidad {
+  text-align: center;
+  margin-left: 6rem;
+}
+
+.row > * {
+  padding: 10px;
+}
+.titulo_galeria {
+  color: #000000;
+  font-size: 60px;
+  padding-top: 90px;
+}
+.container > a:hover {
+  color: #f19408fb;
+}
+.container_producto {
+  background-color: #f19408fb;
+  padding-top: 85px;
+}
+.comentaris {
+  background-color: #f19408fb;
+}
+button.comentaris_2 {
+  background-color: #854836;
+  color: #f7f7f7;
+}
+.bg-comentari {
+  border-top: solid #f7f7f7;
+}
+.btn-enviar {
+  background-color: #854836 !important;
+}
+.descip {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.descrip_2 {
+  font-size: 1.4rem;
+}
+.card .btn-compra {
+  text-decoration: none;
+  background-color: #f19408fb;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+.card .btn-compra:hover {
+  background-color: #854836;
+}
+.page-item a {
+  color: #854836;
+}
+.page-item a:hover {
+  color: #f5b553;
+}
+.btn-vermas {
+  text-align: center;
+  text-decoration: none;
+  background-color: #f19408fb;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn-vermas:hover {
+  color: #854836;
+}
+.impresoras .btn-impresos {
+  text-align: center;
+  text-decoration: none;
+  background-color: #f19408fb;
+  color: #000000;
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+}
+.impresoras .btn-impresos:hover {
+  color: #854836;
+}
+.collapse .button-inicio {
+  background-color: #f7f7f7;
+}
+.button-inicio:hover {
+  background-color: #f5b553;
+}
+.titulo_impresoras {
+  text-align: center;
+  padding-top: 90px;
+}
+.subtitulo_impresoras {
+  text-align: center;
+  padding-top: 20px;
+}
+.impresora_2 {
+  text-align: center;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+tr,
+td {
+  border: solid;
+}
+/************************************************/
+/*********************PABLO**********************/
+/************************************************/
+
+/* Sticky footer style and color
+  -------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #131414;
+  color: #f19408fb;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
+}
+
+/************************************************/
+/*********************CONTACTO**********************/
+/************************************************/
+
+@keyframes fondoxx {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body#bodyx {
+  background: #181818;
+  font-family: "Roboto", sans-serif;
+  padding: 0 1.5rem;
+}
+
+#contactoo {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#send {
+  background-color: grey;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact-all {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.9);
+}
+
+.contact-all > * {
+  padding: 1rem;
+}
+
+.contact-form {
+  background: #222222;
+  display: grid;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: rgb(133, 69, 0);
+  color: rgb(73, 55, 55);
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+.contact-info {
+  background: rgb(100, 54, 0);
+}
+.contact-info h3,
+.contact-info ul,
+.contact-info p {
+  transition: 3s ease-out;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: rgb(248, 248, 248);
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.contact-info ul li {
+  padding: 1rem;
+}
+
+@media (min-width: 700px) {
+  body#bodyx {
+    padding: 0 4rem;
+  }
+  .contact-all {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-all > * {
+    padding: 2em;
+  }
+
+  .contact-info h3,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+  }
+}
+
+/************************************************/
+/*********************TERMINA CONTACTO**********************/
+/************************************************/
+
+/************************************************/
+/*********************EMPIEZA LOGIN**********************/
+/************************************************/
+
+body .bg-dark {
+  font-family: "Spartan", sans-serif;
+  font-weight: 300;
+  color: var(--negro);
+}
+
+.text-light {
+  color: var(--negro) !important;
+}
+.bg-dark {
+  background-color: var(--blanco) !important;
+}
+.bg-dark-x {
+  background-color: var(--cremita);
+}
+
+.btn {
+  min-height: 3rem;
+  font-weight: bold;
+  color: rgb(12, 8, 8);
+}
+
+.form-control {
+  min-height: 3.5rem;
+  line-height: initial;
+  border-width: medium;
+  border-color: black;
+}
+.form-control:focus {
+  background-color: var(--cremita);
+  outline: none;
+}
+
+#imagen {
+  background-image: url(/Impresora3d/impresoras-3d.jpg);
+  background-repeat: round;
+}
+
+#botoni {
+  background-color: rgb(175, 91, 0);
+  border-color: black;
+  border-width: medium;
+}
+
+.btn-primary {
+  background-color: rgb(175, 91, 0);
+  border-color: black;
+  border-width: medium;
+  background-repeat: no-repeat;
+}
+
+/************************************************/
+/*********************TERMINA LOGIN**********************/
+/************************************************/
+
+/************************************************/
+/*********************EMPIEZA NOSOTROS y Error 404**********************/
+/************************************************/
+
+.custom-bg {
+  background-color: white !important;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.margin_container {
+  margin-top: 10rem;
+}
+
+.title-about-us {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.description-about-us {
+  font-size: 24px;
+}
+
+.text-title-about-us {
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.img-size {
+  width: 400px;
+}
+
+.title-error {
+	color: black;
+	font-size: 50px;
+}
+
+.text-error-404 {
+	color: black;
+}
